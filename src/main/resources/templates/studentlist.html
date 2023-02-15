@@ -12,8 +12,8 @@
             <th>Name</th>
             <th>Age</th>
         </tr>
-        <tr th:each"student : ${Student_info}">
-            <td th:text="*{student.name}"></td>
+        <tr th:each"student : ${students}">
+            <td th:text="${student.name}"></td>
         </tr>
     </table>
 </body>

@@ -29,7 +29,7 @@ public class HomeController {
     @GetMapping("/")
     public ModelAndView viewstudents(){
       ModelAndView myModelAndView = new ModelAndView("studentlist");
-      myModelAndView.addObject(s1.getinfo());  
+      myModelAndView.addObject("students",s1.getinfo());  
       return myModelAndView;
     }
     @GetMapping("/studentform")
