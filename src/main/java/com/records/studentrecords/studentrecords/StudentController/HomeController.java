@@ -34,8 +34,9 @@ public class HomeController {
     }
     @GetMapping("/studentform")
     String form(Model model){
-       model.addAttribute(s1);
-        return "form";
+       
+       model.addAttribute("information",s1);
+        return "studentform";
     }
     @PostMapping("/processed-data")
     String processed_data(@ModelAttribute Student_info poststudent){

@@ -7,7 +7,7 @@
     <title>Registration form</title>
 </head>
 <body>
-    <form action="studentlist" method="post" th:object="poststudent${Student_info}">
+    <form action="studentlist" method="post" th:object="poststudent ${information}">
         <input type="text" th:field="*{poststudent.name}">
     </form>
 </body>
