@@ -30,7 +30,7 @@ public class HomeController {
     public String viewstudents(Model mymodel){
         mymodel.addAttribute("dabba",s1.getinfo());
         return "studentlist";
-    }a
+    }
     @GetMapping("/studentform")
     String form(Model model){
        model.addAttribute(s1);
