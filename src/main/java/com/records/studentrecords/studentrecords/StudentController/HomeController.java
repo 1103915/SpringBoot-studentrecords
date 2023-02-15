@@ -27,9 +27,10 @@ public class HomeController {
         return model;
     }*/
     @GetMapping("/")
-    public String viewstudents(Model mymodel){
-        mymodel.addAttribute("dabba",s1.getinfo());
-        return "studentlist";
+    public ModelAndView viewstudents(){
+      ModelAndView myModelAndView = new ModelAndView("studentlist");
+      myModelAndView.addObject(s1.getinfo());  
+      return myModelAndView;
     }
     @GetMapping("/studentform")
     String form(Model model){
