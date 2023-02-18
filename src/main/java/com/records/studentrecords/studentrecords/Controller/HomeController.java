@@ -42,5 +42,11 @@ public class HomeController {
         model.addAttribute("loginatt",new login_info());
         return "myloginpage";
     }
+    @PostMapping("/studentlist")
+    String postdata(@ModelAttribute login_info info){
+        first_Loginservice.addlogin(info);
+        return "redirect:/home";
+
+    }
     
   }
