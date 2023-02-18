@@ -9,17 +9,14 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.records.studentrecords.studentrecords.Model.Student_info;
-import com.records.studentrecords.studentrecords.Model.login_info;
-import com.records.studentrecords.studentrecords.Service.loginservice;
+
 import com.records.studentrecords.studentrecords.Service.service;
 
 
 @Controller
 public class HomeController {
    @Autowired
-   service s1;
-   @Autowired
-   loginservice first_Loginservice; 
+   service s1; 
     @GetMapping("/home")
     public ModelAndView viewstudents(){
       ModelAndView myModelAndView = new ModelAndView("studentlist");
