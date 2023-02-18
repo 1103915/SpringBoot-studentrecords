@@ -18,6 +18,7 @@ import com.records.studentrecords.studentrecords.Service.service;
 public class HomeController {
    @Autowired
    service s1;
+   @Autowired
    loginservice first_Loginservice; 
     @GetMapping("/home")
     public ModelAndView viewstudents(){
@@ -42,7 +43,7 @@ public class HomeController {
         model.addAttribute("loginatt",new login_info());
         return "myloginpage";
     }
-    @PostMapping("/studentlist")
+    @PostMapping("/list")
     String postdata(@ModelAttribute login_info info){
         first_Loginservice.addlogin(info);
         return "redirect:/home";
