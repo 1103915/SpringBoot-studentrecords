@@ -37,17 +37,6 @@ public class HomeController {
         s1.addinfo(poststudent);
         return "redirect:/home";
     }
-    @GetMapping("/loginpage")
-    public String myloginpage(Model model){
-        
-        model.addAttribute("loginatt",new login_info());
-        return "myloginpage";
-    }
-    @PostMapping("/list")
-    String postdata(@ModelAttribute login_info info){
-        first_Loginservice.addlogin(info);
-        return "redirect:/home";
-
-    }
+  
     
   }
