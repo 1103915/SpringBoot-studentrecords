@@ -1,4 +1,4 @@
-package com.records.studentrecords.studentrecords.StudentService;
+package com.records.studentrecords.studentrecords.Service;
 import com.records.studentrecords.studentrecords.Model.Student_info;
 import java.util.ArrayList;
 import java.util.List;
